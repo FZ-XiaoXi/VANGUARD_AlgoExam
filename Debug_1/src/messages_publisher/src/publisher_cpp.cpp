@@ -14,7 +14,7 @@ public:
   ItemInfoPublisher()
   : Node("item_info_publisher"), item_count_(0), next_item_index_(0),
     publish_count_(0)
-  {
+  { 
     load_items();
     if (item_count_ == 0) {
       RCLCPP_ERROR(this->get_logger(), "No items were loaded");
