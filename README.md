@@ -31,3 +31,4 @@
 ### 考核时间：90分钟 (包括客观题)
 
 # 具体信息查看考核飞书文档
+<!-- practice: exam example (branch Lin) -->
