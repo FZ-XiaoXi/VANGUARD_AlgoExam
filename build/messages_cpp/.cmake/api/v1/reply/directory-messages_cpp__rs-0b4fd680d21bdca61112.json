@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "messages_cpp__rs",
+		"source" : "/home/a/VANGUARD_AlgoExam/build/messages_cpp/messages_cpp__rs"
+	}
+}

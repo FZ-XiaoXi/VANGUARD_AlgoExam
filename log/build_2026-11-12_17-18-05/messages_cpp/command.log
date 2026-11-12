@@ -1,0 +1,4 @@
+Invoking command in '/home/a/VANGUARD_AlgoExam/build/messages_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/a/VANGUARD_AlgoExam/Debug_1/src/messages_cpp -DCMAKE_INSTALL_PREFIX=/home/a/VANGUARD_AlgoExam/install/messages_cpp
+Invoked command in '/home/a/VANGUARD_AlgoExam/build/messages_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/a/VANGUARD_AlgoExam/Debug_1/src/messages_cpp -DCMAKE_INSTALL_PREFIX=/home/a/VANGUARD_AlgoExam/install/messages_cpp
+Invoking command in '/home/a/VANGUARD_AlgoExam/build/messages_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/a/VANGUARD_AlgoExam/build/messages_cpp -- -j4 -l4
+Invoked command in '/home/a/VANGUARD_AlgoExam/build/messages_cpp' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/a/VANGUARD_AlgoExam/build/messages_cpp -- -j4 -l4

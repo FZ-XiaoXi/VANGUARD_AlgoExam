@@ -1,0 +1,189 @@
+[0.010s] Invoking command in '/home/a/VANGUARD_AlgoExam/build/messages_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/a/VANGUARD_AlgoExam/build/messages_cpp -- -j4 -l4
+[0.056s] [35m[1mConsolidate compiler generated dependencies of target messages_cpp__rosidl_generator_c[0m
+[0.066s] [  3%] Built target messages_cpp__rs
+[0.076s] [ 12%] Built target messages_cpp__rosidl_generator_c
+[0.076s] [ 15%] Built target messages_cpp__cpp
+[0.079s] [35m[1mConsolidate compiler generated dependencies of target messages_cpp__rosidl_typesupport_c[0m
+[0.085s] [ 18%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.085s] [ 15%] Built target ament_cmake_python_copy_messages_cpp
+[0.089s] [ 21%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[0.107s] [35m[1mConsolidate compiler generated dependencies of target messages_cpp__rosidl_typesupport_fastrtps_cpp[0m
+[0.107s] [ 31%] Built target messages_cpp__rosidl_typesupport_c
+[0.122s] [ 34%] [32m[1mLinking CXX shared library libmessages_cpp__rosidl_typesupport_fastrtps_cpp.so[0m
+[0.126s] [35m[1mConsolidate compiler generated dependencies of target messages_cpp__rosidl_typesupport_introspection_cpp[0m
+[0.185s] [ 43%] Built target messages_cpp__rosidl_typesupport_introspection_cpp
+[0.207s] [35m[1mConsolidate compiler generated dependencies of target messages_cpp__rosidl_typesupport_cpp[0m
+[0.230s] [ 53%] Built target messages_cpp__rosidl_typesupport_cpp
+[0.232s] [ 59%] Built target messages_cpp__rosidl_typesupport_fastrtps_cpp
+[0.300s] [ 62%] [32mBuilding C object CMakeFiles/messages_cpp__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages_cpp/msg/detail/item_info__type_support.c.o[0m
+[0.306s] [ 65%] [32mBuilding CXX object CMakeFiles/messages_cpp__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/messages_cpp/msg/detail/item_info__type_support_c.cpp.o[0m
+[0.340s] [ 68%] [32m[1mLinking C shared library libmessages_cpp__rosidl_typesupport_introspection_c.so[0m
+[0.372s] [ 68%] Built target messages_cpp__rosidl_typesupport_introspection_c
+[0.397s] running egg_info
+[0.398s] writing messages_cpp.egg-info/PKG-INFO
+[0.398s] writing dependency_links to messages_cpp.egg-info/dependency_links.txt
+[0.398s] writing top-level names to messages_cpp.egg-info/top_level.txt
+[0.400s] reading manifest file 'messages_cpp.egg-info/SOURCES.txt'
+[0.400s] writing manifest file 'messages_cpp.egg-info/SOURCES.txt'
+[0.424s] [ 68%] Built target ament_cmake_python_build_messages_cpp_egg
+[0.550s] [ 71%] [32m[1mLinking CXX shared library libmessages_cpp__rosidl_typesupport_fastrtps_c.so[0m
+[0.617s] [ 71%] Built target messages_cpp__rosidl_typesupport_fastrtps_c
+[0.641s] [ 71%] Built target messages_cpp
+[0.672s] [ 75%] [34m[1mGenerating Python code for ROS interfaces[0m
+[0.879s] [ 75%] Built target messages_cpp__py
+[0.901s] [ 78%] [32mBuilding C object CMakeFiles/messages_cpp__rosidl_generator_py.dir/rosidl_generator_py/messages_cpp/msg/_item_info_s.c.o[0m
+[1.022s] [ 81%] [32m[1mLinking C shared library rosidl_generator_py/messages_cpp/libmessages_cpp__rosidl_generator_py.so[0m
+[1.063s] [ 81%] Built target messages_cpp__rosidl_generator_py
+[1.087s] [ 87%] [32mBuilding C object CMakeFiles/messages_cpp__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/messages_cpp/_messages_cpp_s.ep.rosidl_typesupport_c.c.o[0m
+[1.087s] [ 87%] [32mBuilding C object CMakeFiles/messages_cpp__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/messages_cpp/_messages_cpp_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.087s] [ 90%] [32mBuilding C object CMakeFiles/messages_cpp__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/messages_cpp/_messages_cpp_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[1.166s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/messages_cpp/messages_cpp_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.166s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/messages_cpp/messages_cpp_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.166s] [100%] [32m[1mLinking C shared library rosidl_generator_py/messages_cpp/messages_cpp_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.198s] [100%] Built target messages_cpp__rosidl_typesupport_c__pyext
+[1.199s] [100%] Built target messages_cpp__rosidl_typesupport_introspection_c__pyext
+[1.202s] [100%] Built target messages_cpp__rosidl_typesupport_fastrtps_c__pyext
+[1.213s] Invoked command in '/home/a/VANGUARD_AlgoExam/build/messages_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/a/VANGUARD_AlgoExam/build/messages_cpp -- -j4 -l4
+[1.223s] Invoking command in '/home/a/VANGUARD_AlgoExam/build/messages_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/a/VANGUARD_AlgoExam/build/messages_cpp
+[1.230s] -- Install configuration: ""
+[1.230s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/ament_index/resource_index/rosidl_interfaces/messages_cpp
+[1.230s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp
+[1.230s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg
+[1.230s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail
+[1.230s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail/item_info__functions.c
+[1.231s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail/item_info__type_support.h
+[1.231s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail/item_info__functions.h
+[1.231s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail/item_info__struct.h
+[1.231s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/item_info.h
+[1.231s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/rosidl_generator_c__visibility_control.h
+[1.231s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/environment/library_path.sh
+[1.231s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/environment/library_path.dsv
+[1.231s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_generator_c.so
+[1.232s] -- Set runtime path of "/home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_generator_c.so" to ""
+[1.232s] -- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp
+[1.232s] -- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg
+[1.232s] -- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail
+[1.232s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail/item_info__rosidl_typesupport_fastrtps_c.h
+[1.232s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.232s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_typesupport_fastrtps_c.so
+[1.232s] -- Set runtime path of "/home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_typesupport_fastrtps_c.so" to ""
+[1.232s] -- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp
+[1.232s] -- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg
+[1.233s] -- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail
+[1.233s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail/item_info__type_support.c
+[1.233s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail/item_info__rosidl_typesupport_introspection_c.h
+[1.233s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.233s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_typesupport_introspection_c.so
+[1.233s] -- Set runtime path of "/home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_typesupport_introspection_c.so" to ""
+[1.233s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_typesupport_c.so
+[1.233s] -- Set runtime path of "/home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_typesupport_c.so" to ""
+[1.233s] -- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp
+[1.233s] -- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg
+[1.234s] -- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail
+[1.234s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail/item_info__builder.hpp
+[1.234s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail/item_info__struct.hpp
+[1.234s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail/item_info__type_support.hpp
+[1.234s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail/item_info__traits.hpp
+[1.234s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/item_info.hpp
+[1.234s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.234s] -- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp
+[1.234s] -- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg
+[1.234s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.234s] -- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail
+[1.234s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail/dds_fastrtps
+[1.234s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail/item_info__rosidl_typesupport_fastrtps_cpp.hpp
+[1.234s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_typesupport_fastrtps_cpp.so
+[1.235s] -- Set runtime path of "/home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_typesupport_fastrtps_cpp.so" to ""
+[1.235s] -- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp
+[1.235s] -- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg
+[1.235s] -- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail
+[1.235s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail/item_info__rosidl_typesupport_introspection_cpp.hpp
+[1.236s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/include/messages_cpp/messages_cpp/msg/detail/item_info__type_support.cpp
+[1.236s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_typesupport_introspection_cpp.so
+[1.237s] -- Set runtime path of "/home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_typesupport_introspection_cpp.so" to ""
+[1.237s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_typesupport_cpp.so
+[1.237s] -- Set runtime path of "/home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_typesupport_cpp.so" to ""
+[1.237s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/environment/pythonpath.sh
+[1.237s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/environment/pythonpath.dsv
+[1.237s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp-0.0.0-py3.10.egg-info
+[1.237s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.237s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp-0.0.0-py3.10.egg-info/PKG-INFO
+[1.238s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp-0.0.0-py3.10.egg-info/top_level.txt
+[1.238s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.238s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp
+[1.238s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/_messages_cpp_s.ep.rosidl_typesupport_introspection_c.c
+[1.238s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/messages_cpp_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.238s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/_messages_cpp_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.238s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/_messages_cpp_s.ep.rosidl_typesupport_c.c
+[1.238s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/__init__.py
+[1.238s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/messages_cpp_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.238s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/messages_cpp_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.238s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/msg
+[1.238s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/msg/_item_info.py
+[1.238s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/msg/__init__.py
+[1.238s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/msg/_item_info_s.c
+[1.238s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/libmessages_cpp__rosidl_generator_py.so
+[1.266s] Listing '/home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp'...
+[1.266s] Compiling '/home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/__init__.py'...
+[1.266s] Listing '/home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/msg'...
+[1.266s] Compiling '/home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/msg/__init__.py'...
+[1.266s] Compiling '/home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/msg/_item_info.py'...
+[1.274s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/messages_cpp_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.274s] -- Set runtime path of "/home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/messages_cpp_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.274s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/messages_cpp_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.274s] -- Set runtime path of "/home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/messages_cpp_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.274s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/messages_cpp_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.274s] -- Set runtime path of "/home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages/messages_cpp/messages_cpp_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.274s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_generator_py.so
+[1.274s] -- Set runtime path of "/home/a/VANGUARD_AlgoExam/install/messages_cpp/lib/libmessages_cpp__rosidl_generator_py.so" to ""
+[1.274s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/rust
+[1.274s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/rust/build.rs
+[1.274s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/rust/Cargo.toml
+[1.274s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/rust/src
+[1.275s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/rust/src/lib.rs
+[1.275s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/rust/src/msg.rs
+[1.275s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/rust/src/msg
+[1.275s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/rust/src/msg/rmw.rs
+[1.275s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/msg/ItemInfo.idl
+[1.275s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/msg/ItemInfo.msg
+[1.275s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/ament_index/resource_index/package_run_dependencies/messages_cpp
+[1.275s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/ament_index/resource_index/parent_prefix_path/messages_cpp
+[1.275s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/environment/ament_prefix_path.sh
+[1.275s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/environment/ament_prefix_path.dsv
+[1.275s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/environment/path.sh
+[1.275s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/environment/path.dsv
+[1.275s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/local_setup.bash
+[1.275s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/local_setup.sh
+[1.277s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/local_setup.zsh
+[1.277s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/local_setup.dsv
+[1.277s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/package.dsv
+[1.277s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/ament_index/resource_index/packages/messages_cpp
+[1.277s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/export_messages_cpp__rosidl_generator_cExport.cmake
+[1.277s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/export_messages_cpp__rosidl_generator_cExport-noconfig.cmake
+[1.277s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/export_messages_cpp__rosidl_typesupport_fastrtps_cExport.cmake
+[1.277s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/export_messages_cpp__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.278s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/messages_cpp__rosidl_typesupport_introspection_cExport.cmake
+[1.278s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/messages_cpp__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.278s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/messages_cpp__rosidl_typesupport_cExport.cmake
+[1.278s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/messages_cpp__rosidl_typesupport_cExport-noconfig.cmake
+[1.278s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/export_messages_cpp__rosidl_generator_cppExport.cmake
+[1.278s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/export_messages_cpp__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.278s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/export_messages_cpp__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.279s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/messages_cpp__rosidl_typesupport_introspection_cppExport.cmake
+[1.279s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/messages_cpp__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.279s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/messages_cpp__rosidl_typesupport_cppExport.cmake
+[1.279s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/messages_cpp__rosidl_typesupport_cppExport-noconfig.cmake
+[1.279s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/export_messages_cpp__rosidl_generator_pyExport.cmake
+[1.280s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/export_messages_cpp__rosidl_generator_pyExport-noconfig.cmake
+[1.280s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/rosidl_cmake-extras.cmake
+[1.280s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.280s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/ament_cmake_export_libraries-extras.cmake
+[1.280s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/ament_cmake_export_targets-extras.cmake
+[1.280s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.280s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.280s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.280s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[1.281s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/messages_cppConfig.cmake
+[1.281s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake/messages_cppConfig-version.cmake
+[1.281s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/package.xml
+[1.282s] Invoked command in '/home/a/VANGUARD_AlgoExam/build/messages_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/a/VANGUARD_AlgoExam/build/messages_cpp

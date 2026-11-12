@@ -1,0 +1,191 @@
+[0.000000] (-) TimerEvent: {}
+[0.000128] (messages_cpp) JobQueued: {'identifier': 'messages_cpp', 'dependencies': OrderedDict()}
+[0.000154] (messages_publisher) JobQueued: {'identifier': 'messages_publisher', 'dependencies': OrderedDict([('messages_cpp', '/home/a/VANGUARD_AlgoExam/install/messages_cpp')])}
+[0.000171] (messages_subscriber) JobQueued: {'identifier': 'messages_subscriber', 'dependencies': OrderedDict([('messages_cpp', '/home/a/VANGUARD_AlgoExam/install/messages_cpp')])}
+[0.000713] (messages_cpp) JobStarted: {'identifier': 'messages_cpp'}
+[0.009489] (messages_cpp) JobProgress: {'identifier': 'messages_cpp', 'progress': 'cmake'}
+[0.010074] (messages_cpp) Command: {'cmd': ['/usr/bin/cmake', '/home/a/VANGUARD_AlgoExam/Debug_1/src/messages_cpp', '-DCMAKE_INSTALL_PREFIX=/home/a/VANGUARD_AlgoExam/install/messages_cpp'], 'cwd': '/home/a/VANGUARD_AlgoExam/build/messages_cpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'a'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/a/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/276/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/a'), ('CHROME_DESKTOP', 'code_code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.145.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/276/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/a/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/276/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/276/usr/share/code/code'), ('MANAGERPID', '1151'), ('SYSTEMD_EXEC_PID', '1324'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2493'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a'), ('JOURNAL_STREAM', '8:19321'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'a'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/a/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/snap/code/276/usr/share/code/bin/copilot-shim'), ('SESSION_MANAGER', 'local/a:@/tmp/.ICE-unix/1304,unix/a:/tmp/.ICE-unix/1304'), ('GTK_EXE_PREFIX', '/snap/code/276/usr'), ('INVOCATION_ID', '64b48f3cf1624fec854aff678bef1a91'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/276/usr/lib/locale'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K8JQY3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-28099d12d7.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/a/snap/code/276/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/a/VANGUARD_AlgoExam/build/messages_cpp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('COPILOT_DEBUG_NONCE', '93bdbb337b3d35213256f04cef483112'), ('XDG_DATA_DIRS', '/home/a/snap/code/276/.local/share:/home/a/snap/code/276:/snap/code/276/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099652] (-) TimerEvent: {}
+[0.155619] (messages_cpp) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199781] (-) TimerEvent: {}
+[0.258763] (messages_cpp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.272806] (messages_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299916] (-) TimerEvent: {}
+[0.361055] (messages_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.365920] (messages_cpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.366597] (messages_cpp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.367184] (messages_cpp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.371075] (messages_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400042] (-) TimerEvent: {}
+[0.458807] (messages_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.460524] (messages_cpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.460743] (messages_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.461223] (messages_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.464273] (messages_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500146] (-) TimerEvent: {}
+[0.602633] (-) TimerEvent: {}
+[0.618623] (messages_cpp) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.702767] (-) TimerEvent: {}
+[0.734846] (messages_cpp) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.741550] (messages_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.749818] (messages_cpp) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.802948] (-) TimerEvent: {}
+[0.807741] (messages_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.903059] (-) TimerEvent: {}
+[1.004634] (-) TimerEvent: {}
+[1.078523] (messages_cpp) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.1 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.104747] (-) TimerEvent: {}
+[1.207736] (-) TimerEvent: {}
+[1.239711] (messages_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.307844] (-) TimerEvent: {}
+[1.408886] (-) TimerEvent: {}
+[1.451477] (messages_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.476627] (messages_cpp) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.478648] (messages_cpp) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.506703] (messages_cpp) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.506862] (messages_cpp) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.506905] (messages_cpp) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.506937] (messages_cpp) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.508967] (-) TimerEvent: {}
+[1.523557] (messages_cpp) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.607229] (messages_cpp) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.609080] (-) TimerEvent: {}
+[1.639404] (messages_cpp) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.641376] (messages_cpp) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.644091] (messages_cpp) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.668877] (messages_cpp) StdoutLine: {'line': b'-- Generating done\n'}
+[1.676500] (messages_cpp) StdoutLine: {'line': b'-- Build files have been written to: /home/a/VANGUARD_AlgoExam/build/messages_cpp\n'}
+[1.687067] (messages_cpp) CommandEnded: {'returncode': 0}
+[1.687434] (messages_cpp) JobProgress: {'identifier': 'messages_cpp', 'progress': 'build'}
+[1.687452] (messages_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/a/VANGUARD_AlgoExam/build/messages_cpp', '--', '-j4', '-l4'], 'cwd': '/home/a/VANGUARD_AlgoExam/build/messages_cpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'a'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/a/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/276/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/a'), ('CHROME_DESKTOP', 'code_code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.145.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/276/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/a/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/276/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/276/usr/share/code/code'), ('MANAGERPID', '1151'), ('SYSTEMD_EXEC_PID', '1324'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2493'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a'), ('JOURNAL_STREAM', '8:19321'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'a'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/a/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/snap/code/276/usr/share/code/bin/copilot-shim'), ('SESSION_MANAGER', 'local/a:@/tmp/.ICE-unix/1304,unix/a:/tmp/.ICE-unix/1304'), ('GTK_EXE_PREFIX', '/snap/code/276/usr'), ('INVOCATION_ID', '64b48f3cf1624fec854aff678bef1a91'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/276/usr/lib/locale'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K8JQY3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-28099d12d7.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/a/snap/code/276/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/a/VANGUARD_AlgoExam/build/messages_cpp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('COPILOT_DEBUG_NONCE', '93bdbb337b3d35213256f04cef483112'), ('XDG_DATA_DIRS', '/home/a/snap/code/276/.local/share:/home/a/snap/code/276:/snap/code/276/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.711644] (-) TimerEvent: {}
+[1.764957] (messages_cpp) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.765654] (messages_cpp) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.779808] (messages_cpp) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[1.811740] (-) TimerEvent: {}
+[1.842852] (messages_cpp) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_copy_messages_cpp\n'}
+[1.915677] (-) TimerEvent: {}
+[2.017644] (-) TimerEvent: {}
+[2.097733] (messages_cpp) StdoutLine: {'line': b'[  9%] Built target messages_cpp__rs\n'}
+[2.117748] (-) TimerEvent: {}
+[2.137648] (messages_cpp) StdoutLine: {'line': b'[  9%] Built target messages_cpp__cpp\n'}
+[2.159619] (messages_cpp) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.159779] (messages_cpp) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.172949] (messages_cpp) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/messages_cpp__rosidl_generator_c.dir/rosidl_generator_c/messages_cpp/msg/detail/item_info__functions.c.o\x1b[0m\n'}
+[2.176483] (messages_cpp) StdoutLine: {'line': b'running egg_info\n'}
+[2.177163] (messages_cpp) StdoutLine: {'line': b'creating messages_cpp.egg-info\n'}
+[2.177386] (messages_cpp) StdoutLine: {'line': b'writing messages_cpp.egg-info/PKG-INFO\n'}
+[2.177614] (messages_cpp) StdoutLine: {'line': b'writing dependency_links to messages_cpp.egg-info/dependency_links.txt\n'}
+[2.177820] (messages_cpp) StdoutLine: {'line': b'writing top-level names to messages_cpp.egg-info/top_level.txt\n'}
+[2.178051] (messages_cpp) StdoutLine: {'line': b"writing manifest file 'messages_cpp.egg-info/SOURCES.txt'\n"}
+[2.179351] (messages_cpp) StdoutLine: {'line': b"reading manifest file 'messages_cpp.egg-info/SOURCES.txt'\n"}
+[2.179827] (messages_cpp) StdoutLine: {'line': b"writing manifest file 'messages_cpp.egg-info/SOURCES.txt'\n"}
+[2.217850] (-) TimerEvent: {}
+[2.225225] (messages_cpp) StdoutLine: {'line': b'[ 18%] Built target ament_cmake_python_build_messages_cpp_egg\n'}
+[2.238683] (messages_cpp) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.299915] (messages_cpp) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libmessages_cpp__rosidl_generator_c.so\x1b[0m\n'}
+[2.317950] (-) TimerEvent: {}
+[2.372967] (messages_cpp) StdoutLine: {'line': b'[ 25%] Built target messages_cpp__rosidl_generator_c\n'}
+[2.376771] (messages_cpp) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/messages_cpp__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/messages_cpp/msg/detail/item_info__type_support.cpp.o\x1b[0m\n'}
+[2.390698] (messages_cpp) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.399515] (messages_cpp) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/messages_cpp__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages_cpp/msg/detail/dds_fastrtps/item_info__type_support.cpp.o\x1b[0m\n'}
+[2.418416] (-) TimerEvent: {}
+[2.442676] (messages_cpp) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/messages_cpp__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/messages_cpp/msg/item_info__type_support.cpp.o\x1b[0m\n'}
+[2.518576] (-) TimerEvent: {}
+[2.619744] (-) TimerEvent: {}
+[2.660335] (messages_cpp) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/messages_cpp__rosidl_typesupport_c.dir/rosidl_typesupport_c/messages_cpp/msg/item_info__type_support.cpp.o\x1b[0m\n'}
+[2.712010] (messages_cpp) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX shared library libmessages_cpp__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.719106] (messages_cpp) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libmessages_cpp__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.721277] (-) TimerEvent: {}
+[2.762301] (messages_cpp) StdoutLine: {'line': b'[ 46%] Built target messages_cpp__rosidl_typesupport_c\n'}
+[2.782890] (messages_cpp) StdoutLine: {'line': b'[ 50%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.796900] (messages_cpp) StdoutLine: {'line': b'[ 50%] Built target messages_cpp__rosidl_typesupport_cpp\n'}
+[2.823114] (-) TimerEvent: {}
+[2.824953] (messages_cpp) StdoutLine: {'line': b'[ 53%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.852589] (messages_cpp) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libmessages_cpp__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.858499] (messages_cpp) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking CXX shared library libmessages_cpp__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.923224] (-) TimerEvent: {}
+[2.943711] (messages_cpp) StdoutLine: {'line': b'[ 59%] Built target messages_cpp__rosidl_typesupport_introspection_cpp\n'}
+[2.952678] (messages_cpp) StderrLine: {'line': b'gmake[2]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe5\x88\xa0\xe9\x99\xa4\xe6\x96\x87\xe4\xbb\xb6\xe2\x80\x9clibmessages_cpp__rosidl_typesupport_fastrtps_cpp.so\xe2\x80\x9d\n'}
+[2.952906] (messages_cpp) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[2.952965] (messages_cpp) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 31, in <module>\n'}
+[2.953002] (messages_cpp) StderrLine: {'line': b'    sys.exit(main())\n'}
+[2.953074] (messages_cpp) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 27, in main\n'}
+[2.953110] (messages_cpp) StderrLine: {'line': b'    generate_c(args.generator_arguments_file)\n'}
+[2.953138] (messages_cpp) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_c/__init__.py", line 31, in generate_c\n'}
+[2.953206] (messages_cpp) StderrLine: {'line': b'    return generate_files(generator_arguments_file, mapping)\n'}
+[2.953239] (messages_cpp) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files\n'}
+[2.953267] (messages_cpp) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[2.953294] (messages_cpp) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[2.953423] (messages_cpp) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[2.953453] (messages_cpp) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[2.953479] (messages_cpp) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[2.953504] (messages_cpp) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 88, in get_ast_from_idl_string\n'}
+[2.953529] (messages_cpp) StderrLine: {'line': b"    _parser = Lark(grammar, start='specification', maybe_placeholders=False)\n"}
+[2.953555] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 415, in __init__\n'}
+[2.953763] (messages_cpp) StderrLine: {'line': b'    self.parser = self._build_parser()\n'}
+[2.953805] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 458, in _build_parser\n'}
+[2.953851] (messages_cpp) StderrLine: {'line': b'    return parser_class(self.lexer_conf, parser_conf, options=self.options)\n'}
+[2.953880] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 242, in __call__\n'}
+[2.954147] (messages_cpp) StderrLine: {'line': b'    return ParsingFrontend(lexer_conf, parser_conf, options)\n'}
+[2.954188] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 57, in __init__\n'}
+[2.954240] (messages_cpp) StderrLine: {'line': b'    self.parser = create_parser(lexer_conf, parser_conf, options)\n'}
+[2.954271] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 209, in create_earley_parser\n'}
+[2.954297] (messages_cpp) StderrLine: {'line': b'    return f(lexer_conf, parser_conf, options, resolve_ambiguity=resolve_ambiguity, debug=debug, tree_class=tree_class, **extra)\n'}
+[2.954322] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 187, in create_earley_parser__dynamic\n'}
+[2.954346] (messages_cpp) StderrLine: {'line': b'    return xearley.Parser(lexer_conf, parser_conf, earley_matcher.match, **kw)\n'}
+[2.954370] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 29, in __init__\n'}
+[2.954545] (messages_cpp) StderrLine: {'line': b'    BaseParser.__init__(self, lexer_conf, parser_conf, term_matcher, resolve_ambiguity, debug, tree_class)\n'}
+[2.954592] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 45, in __init__\n'}
+[2.955059] (messages_cpp) StderrLine: {'line': b'    self.predictions[rule.origin] = [x.rule for x in analysis.expand_rule(rule.origin)]\n'}
+[2.955185] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/grammar_analysis.py", line 182, in expand_rule\n'}
+[2.955386] (messages_cpp) StderrLine: {'line': b'    for _ in bfs([source_rule], _expand_rule):\n'}
+[2.955474] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/utils.py", line 272, in bfs\n'}
+[2.955823] (messages_cpp) StderrLine: {'line': b'    if next_node not in visited:\n'}
+[2.955881] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/grammar.py", line 25, in __hash__\n'}
+[2.956110] (messages_cpp) StderrLine: {'line': b'    def __hash__(self):\n'}
+[2.956158] (messages_cpp) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[2.957744] (messages_cpp) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[2.957859] (messages_cpp) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c", line 33, in <module>\n'}
+[2.957943] (messages_cpp) StderrLine: {'line': b'    sys.exit(main())\n'}
+[2.958021] (messages_cpp) StderrLine: {'line': b'  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c", line 29, in main\n'}
+[2.958101] (messages_cpp) StderrLine: {'line': b'    generate_typesupport_fastrtps_c(args.generator_arguments_file)\n'}
+[2.958148] (messages_cpp) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_c/__init__.py", line 24, in generate_typesupport_fastrtps_c\n'}
+[2.958179] (messages_cpp) StderrLine: {'line': b'    return generate_files(generator_arguments_file, mapping)\n'}
+[2.958207] (messages_cpp) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files\n'}
+[2.958235] (messages_cpp) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[2.958260] (messages_cpp) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[2.958286] (messages_cpp) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[2.958309] (messages_cpp) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[2.958333] (messages_cpp) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[2.958355] (messages_cpp) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 88, in get_ast_from_idl_string\n'}
+[2.958383] (messages_cpp) StderrLine: {'line': b"    _parser = Lark(grammar, start='specification', maybe_placeholders=False)\n"}
+[2.958407] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 333, in __init__\n'}
+[2.958429] (messages_cpp) StderrLine: {'line': b'    self.grammar, used_files = load_grammar(grammar, self.source_path, self.options.import_paths, self.options.keep_all_tokens)\n'}
+[2.958452] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 1409, in load_grammar\n'}
+[2.959004] (messages_cpp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/messages_cpp__rosidl_typesupport_fastrtps_cpp.dir/build.make:117: libmessages_cpp__rosidl_typesupport_fastrtps_cpp.so] \xe4\xb8\xad\xe6\x96\xad\n'}
+[2.959191] (messages_cpp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:362: CMakeFiles/messages_cpp__rosidl_typesupport_fastrtps_cpp.dir/all] \xe4\xb8\xad\xe6\x96\xad\n'}
+[2.960132] (messages_cpp) StderrLine: {'line': b'    return builder.build(), builder.used_files\n'}
+[2.960184] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 1368, in build\n'}
+[2.960271] (messages_cpp) StderrLine: {'line': b'    self.validate()\n'}
+[2.960313] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 1360, in validate\n'}
+[2.960358] (messages_cpp) StderrLine: {'line': b'    for sym in _find_used_symbols(exp):\n'}
+[2.960387] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 912, in _find_used_symbols\n'}
+[2.960434] (messages_cpp) StderrLine: {'line': b"    return {t.name for x in tree.find_data('expansion')\n"}
+[2.960463] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/tree.py", line 123, in find_data\n'}
+[2.960746] (messages_cpp) StderrLine: {'line': b'    return self.find_pred(lambda t: t.data == data)\n'}
+[2.960790] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/tree.py", line 119, in find_pred\n'}
+[2.960877] (messages_cpp) StderrLine: {'line': b'    return filter(pred, self.iter_subtrees())\n'}
+[2.960915] (messages_cpp) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/tree.py", line 111, in iter_subtrees\n'}
+[2.960944] (messages_cpp) StderrLine: {'line': b'    queue += [c for c in reversed(subtree.children)  # type: ignore[misc]\n'}
+[2.960970] (messages_cpp) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[2.969182] (messages_cpp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/messages_cpp__rosidl_typesupport_introspection_c.dir/build.make:82: rosidl_typesupport_introspection_c/messages_cpp/msg/detail/item_info__rosidl_typesupport_introspection_c.h] \xe4\xb8\xad\xe6\x96\xad\n'}
+[2.969336] (messages_cpp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:283: CMakeFiles/messages_cpp__rosidl_typesupport_introspection_c.dir/all] \xe4\xb8\xad\xe6\x96\xad\n'}
+[2.971855] (messages_cpp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/messages_cpp__rosidl_typesupport_fastrtps_c.dir/build.make:82: rosidl_typesupport_fastrtps_c/messages_cpp/msg/detail/item_info__rosidl_typesupport_fastrtps_c.h] \xe4\xb8\xad\xe6\x96\xad\n'}
+[2.972483] (messages_cpp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:257: CMakeFiles/messages_cpp__rosidl_typesupport_fastrtps_c.dir/all] \xe4\xb8\xad\xe6\x96\xad\n'}
+[2.972617] (messages_cpp) StderrLine: {'line': b'gmake: *** [Makefile:146: all] \xe4\xb8\xad\xe6\x96\xad\n'}
+[2.974451] (messages_cpp) CommandEnded: {'returncode': -2}
+[2.980675] (messages_cpp) JobEnded: {'identifier': 'messages_cpp', 'rc': 'SIGINT'}
+[2.991347] (messages_publisher) JobSkipped: {'identifier': 'messages_publisher'}
+[2.991427] (messages_subscriber) JobSkipped: {'identifier': 'messages_subscriber'}
+[2.991441] (-) EventReactorShutdown: {}
