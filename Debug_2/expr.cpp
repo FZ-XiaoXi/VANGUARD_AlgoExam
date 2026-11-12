@@ -128,8 +128,8 @@ static bool make_token(const char *e) {
     /*
      * 在当前位置依次尝试每条规则。
      * regexec() 是正则匹配函数，返回 0 表示匹配成功。
-     * regexec() 返回的 pmatch.rm_so 是匹配片段相对于当前位置的起点；
-     * regexec() 返回的 pmatch.rm_eo 是匹配片段相对于当前位置的终点；
+     * regexec() 返回的 pmatch.rm_so 是匹配片段相对于当前位置的起点；start
+     * regexec() 返回的 pmatch.rm_eo 是匹配片段相对于当前位置的终点；end
      * 只有 rm_so == 0 才表示“正好从当前位置开始匹配”。
      */
     for (i = 0; i < NR_REGEX; i ++) {
@@ -167,7 +167,7 @@ static bool make_token(const char *e) {
             // 数字需要保存字符串，之后 eval() 才把它转换成整数。
             memset(tokens[nr_token].str, 0, sizeof(tokens[nr_token].str));  //先清空str数组，防止残留数据
             tokens[nr_token].type = TK_NUM;                                 //设置token类型为数字
-            strncpy(tokens[nr_token].str, e + position - substr_len, substr_len); //strncpy把匹配到的数字字符串复制到token的str中，substr_len是匹配到的数字长度
+            strncpy(tokens[nr_token].str, e + position - substr_len, substr_len); //strncpy把匹配到的数字字符串复制到token的str中
             tokens[nr_token].str[31] = '\0';      // 确保字符串以 '\0' 结尾
             break;
           case '('      : tokens[nr_token].type = '('; strcpy(tokens[nr_token].str, "("); break;
@@ -187,6 +187,8 @@ static bool make_token(const char *e) {
   }
   if (eval_trace_enabled) {
     std::cout << "匹配到 " << nr_token << " 个 token." << std::endl;
+    std::cerr << "第一个 token 保存的是: "
+          << tokens[0].str << '\n';
   }
   return true;
 }
@@ -200,7 +202,7 @@ std::int32_t eval(int p, int q);
 * - true：返回值有效；
 * - false：表达式无法分词或求值，返回值只能当作占位值。
 */
-std::int32_t expr(const char *e, bool *success) {
+std::int32_t expr(const char *e, bool *success) { //e 是传进来的算式
   
   init_regex(); //【这里不考，不挖坑】初始化正则表达式，编译规则，确保分词功能可用。
 
@@ -299,8 +301,8 @@ bool check_parentheses(int p, int q){
       if (depth < 0) {
         return false;
       }
-      // 外层括号在 q 之前就闭合，说明后面还有别的内容，不能整体去掉。
       if (depth == 0 && i < q) {
+        // depth 回到 0，说明最外层的左括号已经闭合，但闭合位置不在 q，说明不是完整包裹。
         return false;
       }
     }
