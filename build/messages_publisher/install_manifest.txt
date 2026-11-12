@@ -1,0 +1,17 @@
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/lib/messages_publisher/publisher_node
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/config/items.yaml
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/ament_index/resource_index/package_run_dependencies/messages_publisher
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/ament_index/resource_index/parent_prefix_path/messages_publisher
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/environment/ament_prefix_path.sh
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/environment/ament_prefix_path.dsv
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/environment/path.sh
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/environment/path.dsv
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/local_setup.bash
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/local_setup.sh
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/local_setup.zsh
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/local_setup.dsv
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/package.dsv
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/ament_index/resource_index/packages/messages_publisher
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/cmake/messages_publisherConfig.cmake
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/cmake/messages_publisherConfig-version.cmake
+/home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/package.xml

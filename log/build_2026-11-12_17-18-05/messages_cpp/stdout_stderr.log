@@ -1,0 +1,147 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found ament_cmake_ros: 0.10.1 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/a/VANGUARD_AlgoExam/build/messages_cpp
+[  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  9%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[  9%] Built target ament_cmake_python_copy_messages_cpp
+[  9%] Built target messages_cpp__rs
+[  9%] Built target messages_cpp__cpp
+[ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 18%] [32mBuilding C object CMakeFiles/messages_cpp__rosidl_generator_c.dir/rosidl_generator_c/messages_cpp/msg/detail/item_info__functions.c.o[0m
+running egg_info
+creating messages_cpp.egg-info
+writing messages_cpp.egg-info/PKG-INFO
+writing dependency_links to messages_cpp.egg-info/dependency_links.txt
+writing top-level names to messages_cpp.egg-info/top_level.txt
+writing manifest file 'messages_cpp.egg-info/SOURCES.txt'
+reading manifest file 'messages_cpp.egg-info/SOURCES.txt'
+writing manifest file 'messages_cpp.egg-info/SOURCES.txt'
+[ 18%] Built target ament_cmake_python_build_messages_cpp_egg
+[ 21%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 25%] [32m[1mLinking C shared library libmessages_cpp__rosidl_generator_c.so[0m
+[ 25%] Built target messages_cpp__rosidl_generator_c
+[ 28%] [32mBuilding CXX object CMakeFiles/messages_cpp__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/messages_cpp/msg/detail/item_info__type_support.cpp.o[0m
+[ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/messages_cpp__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages_cpp/msg/detail/dds_fastrtps/item_info__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/messages_cpp__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/messages_cpp/msg/item_info__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/messages_cpp__rosidl_typesupport_c.dir/rosidl_typesupport_c/messages_cpp/msg/item_info__type_support.cpp.o[0m
+[ 43%] [32m[1mLinking CXX shared library libmessages_cpp__rosidl_typesupport_c.so[0m
+[ 46%] [32m[1mLinking CXX shared library libmessages_cpp__rosidl_typesupport_cpp.so[0m
+[ 46%] Built target messages_cpp__rosidl_typesupport_c
+[ 50%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 50%] Built target messages_cpp__rosidl_typesupport_cpp
+[ 53%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 56%] [32m[1mLinking CXX shared library libmessages_cpp__rosidl_typesupport_introspection_cpp.so[0m
+[ 59%] [32m[1mLinking CXX shared library libmessages_cpp__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 59%] Built target messages_cpp__rosidl_typesupport_introspection_cpp
+gmake[2]: *** 正在删除文件“libmessages_cpp__rosidl_typesupport_fastrtps_cpp.so”
+Traceback (most recent call last):
+  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 31, in <module>
+    sys.exit(main())
+  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 27, in main
+    generate_c(args.generator_arguments_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_c/__init__.py", line 31, in generate_c
+    return generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 88, in get_ast_from_idl_string
+    _parser = Lark(grammar, start='specification', maybe_placeholders=False)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 415, in __init__
+    self.parser = self._build_parser()
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 458, in _build_parser
+    return parser_class(self.lexer_conf, parser_conf, options=self.options)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 242, in __call__
+    return ParsingFrontend(lexer_conf, parser_conf, options)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 57, in __init__
+    self.parser = create_parser(lexer_conf, parser_conf, options)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 209, in create_earley_parser
+    return f(lexer_conf, parser_conf, options, resolve_ambiguity=resolve_ambiguity, debug=debug, tree_class=tree_class, **extra)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 187, in create_earley_parser__dynamic
+    return xearley.Parser(lexer_conf, parser_conf, earley_matcher.match, **kw)
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 29, in __init__
+    BaseParser.__init__(self, lexer_conf, parser_conf, term_matcher, resolve_ambiguity, debug, tree_class)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 45, in __init__
+    self.predictions[rule.origin] = [x.rule for x in analysis.expand_rule(rule.origin)]
+  File "/usr/lib/python3/dist-packages/lark/parsers/grammar_analysis.py", line 182, in expand_rule
+    for _ in bfs([source_rule], _expand_rule):
+  File "/usr/lib/python3/dist-packages/lark/utils.py", line 272, in bfs
+    if next_node not in visited:
+  File "/usr/lib/python3/dist-packages/lark/grammar.py", line 25, in __hash__
+    def __hash__(self):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c", line 33, in <module>
+    sys.exit(main())
+  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c", line 29, in main
+    generate_typesupport_fastrtps_c(args.generator_arguments_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_c/__init__.py", line 24, in generate_typesupport_fastrtps_c
+    return generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 88, in get_ast_from_idl_string
+    _parser = Lark(grammar, start='specification', maybe_placeholders=False)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 333, in __init__
+    self.grammar, used_files = load_grammar(grammar, self.source_path, self.options.import_paths, self.options.keep_all_tokens)
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 1409, in load_grammar
+gmake[2]: *** [CMakeFiles/messages_cpp__rosidl_typesupport_fastrtps_cpp.dir/build.make:117: libmessages_cpp__rosidl_typesupport_fastrtps_cpp.so] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:362: CMakeFiles/messages_cpp__rosidl_typesupport_fastrtps_cpp.dir/all] 中断
+    return builder.build(), builder.used_files
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 1368, in build
+    self.validate()
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 1360, in validate
+    for sym in _find_used_symbols(exp):
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 912, in _find_used_symbols
+    return {t.name for x in tree.find_data('expansion')
+  File "/usr/lib/python3/dist-packages/lark/tree.py", line 123, in find_data
+    return self.find_pred(lambda t: t.data == data)
+  File "/usr/lib/python3/dist-packages/lark/tree.py", line 119, in find_pred
+    return filter(pred, self.iter_subtrees())
+  File "/usr/lib/python3/dist-packages/lark/tree.py", line 111, in iter_subtrees
+    queue += [c for c in reversed(subtree.children)  # type: ignore[misc]
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/messages_cpp__rosidl_typesupport_introspection_c.dir/build.make:82: rosidl_typesupport_introspection_c/messages_cpp/msg/detail/item_info__rosidl_typesupport_introspection_c.h] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:283: CMakeFiles/messages_cpp__rosidl_typesupport_introspection_c.dir/all] 中断
+gmake[2]: *** [CMakeFiles/messages_cpp__rosidl_typesupport_fastrtps_c.dir/build.make:82: rosidl_typesupport_fastrtps_c/messages_cpp/msg/detail/item_info__rosidl_typesupport_fastrtps_c.h] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:257: CMakeFiles/messages_cpp__rosidl_typesupport_fastrtps_c.dir/all] 中断
+gmake: *** [Makefile:146: all] 中断

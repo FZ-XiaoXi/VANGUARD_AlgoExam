@@ -1,0 +1,30 @@
+{
+  "package_name": "messages_cpp",
+  "output_dir": "/home/a/VANGUARD_AlgoExam/build/messages_cpp/rosidl_generator_rs/messages_cpp",
+  "template_dir": "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource",
+  "idl_tuples": [
+    "/home/a/VANGUARD_AlgoExam/build/messages_cpp/rosidl_adapter/messages_cpp:msg/ItemInfo.idl"
+  ],
+  "ros_interface_files": [
+    "/home/a/VANGUARD_AlgoExam/build/messages_cpp/rosidl_adapter/messages_cpp/msg/ItemInfo.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/share/rosidl_generator_rs/cmake/../../../lib/rosidl_generator_rs/rosidl_generator_rs",
+    "/opt/ros/humble/share/rosidl_generator_rs/cmake/../../../local/lib/python3.10/dist-packages/rosidl_generator_rs/__init__.py",
+    "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/action.rs.em",
+    "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/action/rmw.rs.em",
+    "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/build.rs.em",
+    "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/Cargo.toml.em",
+    "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/lib.rs.em",
+    "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/msg.rs.em",
+    "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/msg/rmw.rs.em",
+    "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/srv.rs.em",
+    "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/srv/rmw.rs.em",
+    "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/templates/msg_idiomatic.rs.em",
+    "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/templates/msg_rmw.rs.em",
+    "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/templates/srv_idiomatic.rs.em",
+    "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/templates/srv_rmw.rs.em",
+    "/home/a/VANGUARD_AlgoExam/build/messages_cpp/rosidl_adapter/messages_cpp/msg/ItemInfo.idl"
+  ],
+  "package_version": "0.0.0"
+}

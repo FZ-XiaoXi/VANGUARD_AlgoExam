@@ -1,0 +1,4 @@
+source;share/messages_subscriber/local_setup.bash
+source;share/messages_subscriber/local_setup.dsv
+source;share/messages_subscriber/local_setup.sh
+source;share/messages_subscriber/local_setup.zsh
