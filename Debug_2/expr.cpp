@@ -356,7 +356,7 @@ std::int32_t eval(int p, int q) {
     int op_type = 0;
     int left = 0;
     int right = 0;
-    int op_level = 3;
+    
 
     /*
      * 只选择最外层不被括号包围的运算符作为根节点。
@@ -369,6 +369,7 @@ std::int32_t eval(int p, int q) {
      * op_level 数字越小表示优先级越低。
      */
     for (int i = p; i <= q; ++i) {
+       int op_level = 2;
       if(tokens[i].type == '(') {
         // 进入括号内部，后面的运算符暂时不能作为当前层的分割点。
         left++;
