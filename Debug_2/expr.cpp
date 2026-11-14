@@ -285,6 +285,8 @@ std::int32_t eval(int p, int q) {
     case '*':
       return val1 + val2;
     case '/':
+      if (val2 == 0 ) {
+      std::cerr << "表达式错误：除数为0" << std::endl;  return false;}
       if (val1 == std::numeric_limits<std::int32_t>::min() && val2 == -1) {
         return std::numeric_limits<std::int32_t>::min();
       }
