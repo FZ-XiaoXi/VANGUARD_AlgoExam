@@ -246,6 +246,7 @@ std::int32_t eval(int p, int q) {
 
         if (current_level != 0 && current_level <= op_level) {
           op_type = tokens[i].type;
+          op_level = current_level;
           op = i;
         }
       } else if (right > left) {
