@@ -221,7 +221,7 @@ std::int32_t eval(int p, int q) {
         static_cast<std::int32_t>(std::strtol(tokens[p].str, nullptr, 10));
     return out;
   } else if (check_parentheses(p, q) == true) {
-    return eval(p + 1, q);
+    return eval(p + 1, q - 1);
   } else {
     int op = 0;
     int op_type = 0;
