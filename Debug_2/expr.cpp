@@ -284,7 +284,7 @@ std::int32_t eval(int p, int q) {
     case '-':
       return val1 - val2;
     case '*':
-      return val1 + val2;
+      return val1 * val2;
     case '/':
       if (val2 == 0 ) {
       std::cerr << "表达式错误：除数为0" << std::endl;  return false;}
