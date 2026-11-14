@@ -13,12 +13,12 @@ find_package(messages_cpp REQUIRED)
 find_package(yaml_cpp_vendor REQUIRED)
 find_package(yaml-cpp REQUIRED)
 
-add_executable(publisher_node src/publisher.cpp)
+add_executable(publisher_node src/publisher_cpp.cpp)
 ament_target_dependencies(publisher_node ament_index_cpp rclcpp messages_cpp)
 target_link_libraries(publisher_node yaml-cpp)
 install(TARGETS
   publisher_node
-  DESTINATION bin/${PROJECT_NAME}
+  DESTINATION lib/${PROJECT_NAME}
 )
 install(DIRECTORY config
   DESTINATION share/${PROJECT_NAME}

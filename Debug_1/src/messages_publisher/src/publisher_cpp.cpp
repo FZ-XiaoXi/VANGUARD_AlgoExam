@@ -41,7 +41,7 @@ private:
     int yaml_item_count = items.size();
 
     for (int i = 0; i < yaml_item_count && item_count_ < 20; i++) {
-      items_[item_count_].id = items[i]["id"].as<int32_t>();
+      items_[item_count_].id = items[i]["Id"].as<int32_t>();
       items_[item_count_].name = items[i]["name"].as<std::string>();
       items_[item_count_].info = items[i]["info"].as<std::string>();
       item_count_++;

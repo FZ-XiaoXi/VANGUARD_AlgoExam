@@ -8,7 +8,7 @@ public:
   {
     // 使用 lambda 表达式替代 std::bind，避免函数重载解析问题
     subscription_ = this->create_subscription<messages_cpp::msg::ItemInfo>(
-        "item_data", 10,
+        "item_info", 10,
       [this](const messages_cpp::msg::ItemInfo::SharedPtr msg) {
         this->topic_callback(msg);
         });
