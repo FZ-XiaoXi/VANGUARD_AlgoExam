@@ -164,14 +164,16 @@ static bool make_token(const char *e) {
             memset(tokens[nr_token].str, 0, sizeof(tokens[nr_token].str));  //先清空str数组，防止残留数据
             tokens[nr_token].type = TK_NUM;                                 //设置token类型为数字
             strncpy(tokens[nr_token].str, e + position - substr_len, substr_len); //strncpy把匹配到的数字字符串复制到token的str中，substr_len是匹配到的数字长度
-            tokens[nr_token].str[3] = '\0';      // 确保字符串以 '\0' 结尾
+            tokens[nr_token].str[substr_len] = '\0';  // 确保字符串以 '\0' 结尾
             break;
           case '('      : tokens[nr_token].type = '('; strcpy(tokens[nr_token].str, "("); break;
           case ')'      : tokens[nr_token].type = ')'; strcpy(tokens[nr_token].str, ")"); break;
           default: std::cerr << "未知的 token 类型：" << rules[i].token_type << std::endl;
         }
         
-        nr_token++;
+        if (rules[i].token_type != TK_NOTYPE) {
+          nr_token++;
+        }
         break;
       }
     }
