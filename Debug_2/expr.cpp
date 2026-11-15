@@ -342,7 +342,7 @@ std::int32_t eval(int p, int q) {
     return out;
   }else if (check_parentheses(p, q) == true){   //分支3. 当前区间被一对完整的括号包住，去掉括号后继续计算里面的内容
     // 例如“(1+2)”只需要计算里面的“1+2”，括号本身不产生数值。
-    return eval(p, q);
+    return eval(p + 1, q - 1);
   }else{    // 普通表达式：在最外层寻找一个运算符，把区间拆成两半。
     int op = 0;
     int op_type = 0;
