@@ -1,0 +1,4 @@
+[0.010s] Invoking command in '/home/a/VANGUARD_AlgoExam/build/messages_publisher': AMENT_PREFIX_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/a/VANGUARD_AlgoExam/build/messages_publisher -- -j4 -l4
+[0.057s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher_node.dir/src/publisher_cpp.cpp.o[0m
+[3.765s] [100%] [32m[1mLinking CXX executable publisher_node[0m
+[3.946s] [100%] Built target publisher_node
