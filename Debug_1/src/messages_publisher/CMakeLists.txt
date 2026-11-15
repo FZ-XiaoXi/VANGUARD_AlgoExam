@@ -14,6 +14,10 @@ find_package(yaml_cpp_vendor REQUIRED)
 find_package(yaml-cpp REQUIRED)
 
 add_executable(publisher_node src/publisher_cpp.cpp)
+install(DIRECTORY
+  config
+  DESTINATION share/${PROJECT_NAME}
+)
 ament_target_dependencies(publisher_node ament_index_cpp rclcpp messages_cpp)
 target_link_libraries(publisher_node yaml-cpp)
 install(TARGETS
