@@ -1,0 +1,4 @@
+source;share/messages_publisher/local_setup.bash
+source;share/messages_publisher/local_setup.dsv
+source;share/messages_publisher/local_setup.sh
+source;share/messages_publisher/local_setup.zsh
