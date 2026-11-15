@@ -7,7 +7,7 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(messages_cpp REQUIRD)
+find_package(messages_cpp REQUIRED)
 find_package(rclcpp REQUIRED)
 
 
