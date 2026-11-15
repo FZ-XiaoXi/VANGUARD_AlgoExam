@@ -6,15 +6,15 @@ public:
   ItemInfoSubscriber()
   : Node("item_info_subscriber")
   {
-    // 使用 lambda 表达式替代 std::bind，避免函数重载解析问题
     subscription_ = this->create_subscription<messages_cpp::msg::ItemInfo>(
-        "ItemInfo", 10,
-      [this](const messages_cpp::msg::ItemInfo::SharedPtr msg) {
-        this->topic_callback(msg);
+        "item_info", 10,
+        [this](const messages_cpp::msg::ItemInfo::SharedPtr msg) {
+          this->topic_callback(msg);
         });
 
     RCLCPP_INFO(this->get_logger(),
-                "ItemInfo Subscriber started. Topic name: \"%s\". Waiting for messages...", subscription_->get_topic_name());
+                "ItemInfo Subscriber started. Topic name: \"%s\". Waiting for messages...",
+                subscription_->get_topic_name());
   }
 
 private:
