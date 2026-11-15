@@ -1,0 +1,16 @@
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/lib/messages_subscriber/subscriber_node
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/share/ament_index/resource_index/package_run_dependencies/messages_subscriber
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/share/ament_index/resource_index/parent_prefix_path/messages_subscriber
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/share/messages_subscriber/environment/ament_prefix_path.sh
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/share/messages_subscriber/environment/ament_prefix_path.dsv
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/share/messages_subscriber/environment/path.sh
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/share/messages_subscriber/environment/path.dsv
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/share/messages_subscriber/local_setup.bash
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/share/messages_subscriber/local_setup.sh
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/share/messages_subscriber/local_setup.zsh
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/share/messages_subscriber/local_setup.dsv
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/share/messages_subscriber/package.dsv
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/share/ament_index/resource_index/packages/messages_subscriber
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/share/messages_subscriber/cmake/messages_subscriberConfig.cmake
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/share/messages_subscriber/cmake/messages_subscriberConfig-version.cmake
+/home/a/VANGUARD_AlgoExam/install/messages_subscriber/share/messages_subscriber/package.xml
