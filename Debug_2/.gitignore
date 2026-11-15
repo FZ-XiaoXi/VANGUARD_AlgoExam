@@ -1,1 +1,17 @@
 build/
+install/
+log/
+*.log
+*.swp
+*.swo
+*.bak
+*.tmp
+*.cache
+*.o
+*.so
+*.a
+*.pyc
+*.pyo
+*.pyd
+*.pycache/
+setup.bash/gity
