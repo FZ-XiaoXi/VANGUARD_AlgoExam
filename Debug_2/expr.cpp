@@ -121,8 +121,8 @@ static bool make_token(const char *e) {
   nr_token = 0;
 
   while (e[position] != '\0') {
-    /*
-     * 在当前位置依次尝试每条规则。
+ 
+     /* 在当前位置依次尝试每条规则。
      * regexec() 是正则匹配函数，返回 0 表示匹配成功。
      * regexec() 返回的 pmatch.rm_so 是匹配片段相对于当前位置的起点；
      * regexec() 返回的 pmatch.rm_eo 是匹配片段相对于当前位置的终点；
@@ -213,7 +213,7 @@ std::int32_t expr(const char *e, bool *success) {
   eval_ok = true;
 
 
-  std::int32_t out = eval(0, nr_token - 1);
+  std::int32_t out = eval(0, nr_token - 1 );
   if (!eval_ok) {
     *success = false;
     return 0;
@@ -290,7 +290,7 @@ std::int32_t eval(int p, int q) {
     return out;
   }else if (check_parentheses(p, q) == true){   //分支3. 当前区间被一对完整的括号包住，去掉括号后继续计算里面的内容
     // 例如“(1+2)”只需要计算里面的“1+2”，括号本身不产生数值。
-    return eval(p, q);
+    return eval(p+1, q-1);
   }else{    // 普通表达式：在最外层寻找一个运算符，把区间拆成两半。
     int op = 0;
     int op_type = 0;
