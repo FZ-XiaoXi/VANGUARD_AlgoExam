@@ -4,7 +4,7 @@
 #include <string>
 #include <rclcpp/rclcpp.hpp>
 #include <ament_index_cpp/get_package_share_directory.hpp>
-#include <messages_cpp/msg/item_info.hpp>
+#include "messages_cpp/msg/ItemInfo.hpp"   //iteminfo原本有下划线，应取消
 #include <yaml-cpp/yaml.h>
 
 using namespace std::chrono_literals;
