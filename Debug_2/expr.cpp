@@ -164,14 +164,13 @@ static bool make_token(const char *e) {
             memset(tokens[nr_token].str, 0, sizeof(tokens[nr_token].str));  //先清空str数组，防止残留数据
             tokens[nr_token].type = TK_NUM;                                 //设置token类型为数字
             strncpy(tokens[nr_token].str, e + position - substr_len, substr_len); //strncpy把匹配到的数字字符串复制到token的str中，substr_len是匹配到的数字长度
-            tokens[nr_token].str[3] = '\0';      // 确保字符串以 '\0' 结尾
+            tokens[nr_token].str[31] = '\0';      // 确保字符串以 '\0' 结尾
             break;
           case '('      : tokens[nr_token].type = '('; strcpy(tokens[nr_token].str, "("); break;
           case ')'      : tokens[nr_token].type = ')'; strcpy(tokens[nr_token].str, ")"); break;
           default: std::cerr << "未知的 token 类型：" << rules[i].token_type << std::endl;
         }
-        
-        nr_token++;
+        if(rules[i].token_type != TK_NOTYPE) nr_token++;
         break;
       }
     }
@@ -275,10 +274,10 @@ std::int32_t expr(const char *e, bool *success) {
 }
 
 bool check_parentheses(int p, int q){
-/*
-* 判断 tokens[p..q] 是否被一对完整的最外层括号包住。
-* 例如“(1+2)”可以去掉外层括号，但“(1+2)*3”不可以，因为第一对括号在区间中间就结束了。
-*/
+  /*
+  * 判断 tokens[p..q] 是否被一对完整的最外层括号包住。
+  * 例如“(1+2)”可以去掉外层括号，但“(1+2)*3”不可以，因为第一对括号在区间中间就结束了。
+  */
   if (p >= q || tokens[p].type != '(' || tokens[q].type != ')') {
     return false;
   }
@@ -312,11 +311,11 @@ std::int32_t eval(int p, int q) {
     }
     std::cout << std::endl;
   }
-/*
-* 计算 tokens[p..q] 这一段，p 和 q 都包含在区间内。
-* 例如 token 序列“1+2*3”可能对应下标 0 到 4，第一次调用就是
-* eval(0, 4)。函数会找到最外层的运算符，再递归计算左右两边。
-*/
+  /*
+   * 计算 tokens[p..q] 这一段，p 和 q 都包含在区间内。
+   * 例如 token 序列“1+2*3”可能对应下标 0 到 4，第一次调用就是
+   * eval(0, 4)。函数会找到最外层的运算符，再递归计算左右两边。
+   */
   // 下面按四种情况处理：空区间、单个 token、完整括号，以及普通二元运算。
   if (p > q){           //分支1. 开始位置大于结束位置，说明表达式不合法
     std::cerr << "表达式错误：表达式为空" << std::endl;
@@ -342,7 +341,7 @@ std::int32_t eval(int p, int q) {
     return out;
   }else if (check_parentheses(p, q) == true){   //分支3. 当前区间被一对完整的括号包住，去掉括号后继续计算里面的内容
     // 例如“(1+2)”只需要计算里面的“1+2”，括号本身不产生数值。
-    return eval(p, q);
+    return eval(p + 1, q - 1);
   }else{    // 普通表达式：在最外层寻找一个运算符，把区间拆成两半。
     int op = 0;
     int op_type = 0;
@@ -431,7 +430,7 @@ std::int32_t eval(int p, int q) {
       case '-'    : return val1 - val2;
       case '*'    : return val1 * val2;
       case '/':
-        if (val1 == 0) {
+        if (val2 == 0) {
           std::cerr << "表达式错误：除数为零" << std::endl;
           eval_ok = false;
           return 0;
