@@ -143,7 +143,7 @@ static bool make_token(const char *e) {
           std::cerr << "token 数量超出上限" << std::endl;
           return false;
         }
-        if (rules[i].token_type == TK_NUM && substr_len >= (int)sizeof(tokens[0].str)) {
+        if (rules[i].token_type >= TK_NUM && substr_len >= (int)sizeof(tokens[0].str)) {
           std::cerr << "数字长度超出限制" << std::endl;
           return false;
         }
@@ -269,11 +269,10 @@ std::int32_t expr(const char *e, bool *success) {
   if (!eval_ok) {
     *success = false;
     return 0;
-  }
+  }else{
   *success = true;
   return out;
-}
-
+  }
 bool check_parentheses(int p, int q){
 /*
 * 判断 tokens[p..q] 是否被一对完整的最外层括号包住。
