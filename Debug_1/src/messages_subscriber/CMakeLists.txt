@@ -8,6 +8,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(messages_cpp REQUIRED)
 
 add_executable(subscriber_node src/subscriber_cpp.cpp)
 ament_target_dependencies(subscriber_node rclcpp messages_cpp)
