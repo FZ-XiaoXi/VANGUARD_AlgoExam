@@ -6,7 +6,7 @@
 #include <ament_index_cpp/get_package_share_directory.hpp>
 #include <messages_cpp/msg/item_info.hpp>
 #include <yaml-cpp/yaml.h>
-#include <Debug_1/src/messages_publisher/config/items.yaml>
+
 using namespace std::chrono_literals;
 
 class ItemInfoPublisher : public rclcpp::Node {
@@ -35,7 +35,8 @@ private:
     std::string config_path =
       ament_index_cpp::get_package_share_directory("messages_publisher") +
       "/config/items.yaml";
-
+    //yaml配置路径出错badfile了
+    
     YAML::Node config = YAML::LoadFile(config_path);
     YAML::Node items = config["items"];
     int yaml_item_count = items.size();
