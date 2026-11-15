@@ -164,13 +164,14 @@ static bool make_token(const char *e) {
             memset(tokens[nr_token].str, 0, sizeof(tokens[nr_token].str));  //先清空str数组，防止残留数据
             tokens[nr_token].type = TK_NUM;                                 //设置token类型为数字
             strncpy(tokens[nr_token].str, e + position - substr_len, substr_len); //strncpy把匹配到的数字字符串复制到token的str中，substr_len是匹配到的数字长度
-            tokens[nr_token].str[31] = '\0';      // 确保字符串以 '\0' 结尾
+            tokens[nr_token].str[3] = '\0';      // 确保字符串以 '\0' 结尾
             break;
           case '('      : tokens[nr_token].type = '('; strcpy(tokens[nr_token].str, "("); break;
           case ')'      : tokens[nr_token].type = ')'; strcpy(tokens[nr_token].str, ")"); break;
           default: std::cerr << "未知的 token 类型：" << rules[i].token_type << std::endl;
         }
-        if(rules[i].token_type != TK_NOTYPE) nr_token++;
+        
+        nr_token++;
         break;
       }
     }
@@ -212,7 +213,7 @@ std::int32_t expr(const char *e, bool *success) {
   eval_ok = true;
 
  /*
- * ========================================================================
+ * ===================================================================
  * 【eval 递归计算过程说明】
  * 函数 eval(p, q) 负责计算 tokens 数组中从下标 p 到 q 的表达式的值。
  * 比如字符串 " 1 + 2 + 3 + 4"
@@ -228,7 +229,7 @@ std::int32_t expr(const char *e, bool *success) {
  *    - 递归调用 eval 计算右半边。
  *    - 最后将两边的结果按当前运算符进行计算。
  *
- * ========================================================================
+ * ====================================================================
  * 【调用过程图解】以表达式 "5+3*(2+1)" 为例：
  *
  * 表达式树结构：
@@ -254,14 +255,14 @@ std::int32_t expr(const char *e, bool *success) {
  *       └─ 计算 3 * 3    ─────────────► 返回 9
  *    └─ 计算 5 + 9       ─────────────► 返回 14
  *
- * ========================================================================
+ * =====================================================================
  * 【异常与错误处理】
  * 1. 括号不匹配：在 check_parentheses 中检测到深度为负或未闭合，返回失败。如 "(()" 是未闭合，"(())))" 是深度为负。
  * 2. 运算符缺失：找不到合法的运算符，返回失败。
  * 3. 除数为零：在 '/' 运算前检查 val2 == 0，若是则设置 eval_ok = false。
  * 4. 任何一层 eval 失败都会将 eval_ok 置为 false，并逐层向上传递，最终
  *    由 expr() 函数设置 *success = false。
- * ========================================================================
+ * ======================================================================
  */
   /* eval() 会计算 tokens[0] 到 tokens[nr_token - 1] 这一整段表达式。 */
   std::int32_t out = eval(0, nr_token - 1);
@@ -274,10 +275,10 @@ std::int32_t expr(const char *e, bool *success) {
 }
 
 bool check_parentheses(int p, int q){
-  /*
-  * 判断 tokens[p..q] 是否被一对完整的最外层括号包住。
-  * 例如“(1+2)”可以去掉外层括号，但“(1+2)*3”不可以，因为第一对括号在区间中间就结束了。
-  */
+/*
+* 判断 tokens[p..q] 是否被一对完整的最外层括号包住。
+* 例如“(1+2)”可以去掉外层括号，但“(1+2)*3”不可以，因为第一对括号在区间中间就结束了。
+*/
   if (p >= q || tokens[p].type != '(' || tokens[q].type != ')') {
     return false;
   }
@@ -311,11 +312,11 @@ std::int32_t eval(int p, int q) {
     }
     std::cout << std::endl;
   }
-  /*
-   * 计算 tokens[p..q] 这一段，p 和 q 都包含在区间内。
-   * 例如 token 序列“1+2*3”可能对应下标 0 到 4，第一次调用就是
-   * eval(0, 4)。函数会找到最外层的运算符，再递归计算左右两边。
-   */
+/*
+* 计算 tokens[p..q] 这一段，p 和 q 都包含在区间内。
+* 例如 token 序列“1+2*3”可能对应下标 0 到 4，第一次调用就是
+* eval(0, 4)。函数会找到最外层的运算符，再递归计算左右两边。
+*/
   // 下面按四种情况处理：空区间、单个 token、完整括号，以及普通二元运算。
   if (p > q){           //分支1. 开始位置大于结束位置，说明表达式不合法
     std::cerr << "表达式错误：表达式为空" << std::endl;
@@ -341,7 +342,7 @@ std::int32_t eval(int p, int q) {
     return out;
   }else if (check_parentheses(p, q) == true){   //分支3. 当前区间被一对完整的括号包住，去掉括号后继续计算里面的内容
     // 例如“(1+2)”只需要计算里面的“1+2”，括号本身不产生数值。
-    return eval(p + 1, q - 1);
+    return eval(p, q);
   }else{    // 普通表达式：在最外层寻找一个运算符，把区间拆成两半。
     int op = 0;
     int op_type = 0;
@@ -430,7 +431,7 @@ std::int32_t eval(int p, int q) {
       case '-'    : return val1 - val2;
       case '*'    : return val1 * val2;
       case '/':
-        if (val2 == 0) {
+        if (val1 == 0) {
           std::cerr << "表达式错误：除数为零" << std::endl;
           eval_ok = false;
           return 0;
