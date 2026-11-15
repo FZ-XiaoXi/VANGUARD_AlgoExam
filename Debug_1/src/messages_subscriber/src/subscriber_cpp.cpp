@@ -1,4 +1,4 @@
-#include <messages_cpp/msg/item_info.hpp>
+#include <messages_cpp/msg/ItemInfo.msg>
 #include <rclcpp/rclcpp.hpp>
 
 class ItemInfoSubscriber : public rclcpp::Node {

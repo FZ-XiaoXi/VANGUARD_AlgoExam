@@ -10,13 +10,14 @@
  * eval_ok 用来传递错误：任意一层发现错误后，将eval_ok设置为false，这样外层就不会继续使用错误结果。
  */
 #include "expr.hpp"
-
+#include <bits/stdc++.h>
 #include <regex.h>
 #include <cstdint>
 #include <cstdlib>
 #include <cstring>
 #include <iostream>
 #include <limits>
+
 enum {
   TK_NOTYPE = 256, TK_NUM = 1,
 };

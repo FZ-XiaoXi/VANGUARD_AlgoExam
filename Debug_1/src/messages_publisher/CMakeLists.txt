@@ -15,7 +15,7 @@ find_package(yaml-cpp REQUIRED)
 
 add_executable(publisher_node src/publisher_cpp.cpp)
 ament_target_dependencies(publisher_node ament_index_cpp rclcpp messages_cpp)
-target_link_libraries(publisher_node yaml-cpp)
+target_link_libraries(publisher_node yaml-cpp rclcpp ament_index_cpp)
 install(TARGETS
   publisher_node
   DESTINATION lib/${PROJECT_NAME}
