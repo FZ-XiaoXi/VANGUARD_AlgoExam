@@ -11,7 +11,7 @@ find_package(rclcpp REQUIRED)
 find_package(messages_cpp REQUIRED)
 
 add_executable(subscriber_node src/subscriber_cpp.cpp)
-ament_target_dependencies(subscriber_node ament_index_cpp rclcpp messages_cpp)
+ament_target_dependencies(subscriber_node rclcpp messages_cpp)
 install(TARGETS
   subscriber_node
   DESTINATION bin/${PROJECT_NAME}
