@@ -1,0 +1,73 @@
+[0.012s] Invoking command in '/home/a/VANGUARD_AlgoExam/build/messages_publisher': AMENT_PREFIX_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/a/VANGUARD_AlgoExam/Debug_1/src/messages_publisher -DCMAKE_INSTALL_PREFIX=/home/a/VANGUARD_AlgoExam/install/messages_publisher
+[0.066s] -- The C compiler identification is GNU 11.4.0
+[0.120s] -- The CXX compiler identification is GNU 11.4.0
+[0.129s] -- Detecting C compiler ABI info
+[0.209s] -- Detecting C compiler ABI info - done
+[0.213s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.213s] -- Detecting C compile features
+[0.213s] -- Detecting C compile features - done
+[0.217s] -- Detecting CXX compiler ABI info
+[0.306s] -- Detecting CXX compiler ABI info - done
+[0.311s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.311s] -- Detecting CXX compile features
+[0.311s] -- Detecting CXX compile features - done
+[0.313s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.433s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.501s] -- Found ament_index_cpp: 1.4.1 (/opt/ros/humble/share/ament_index_cpp/cmake)
+[0.505s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.533s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.536s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.541s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.549s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.562s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.595s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.596s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.672s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.691s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.719s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.726s] -- Looking for pthread.h
+[0.796s] -- Looking for pthread.h - found
+[0.797s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.855s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.856s] -- Found Threads: TRUE  
+[0.893s] -- Found messages_cpp: 0.0.0 (/home/a/VANGUARD_AlgoExam/install/messages_cpp/share/messages_cpp/cmake)
+[0.900s] -- Found yaml_cpp_vendor: 8.0.2 (/opt/ros/humble/share/yaml_cpp_vendor/cmake)
+[0.902s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.961s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.961s] -- Configured cppcheck include dirs: 
+[0.961s] -- Configured cppcheck exclude dirs and/or files: 
+[0.961s] -- Added test 'lint_cmake' to check CMake code style
+[0.961s] -- Added test 'uncrustify' to check C / C++ code style
+[0.961s] -- Configured uncrustify additional arguments: 
+[0.961s] -- Added test 'xmllint' to check XML markup files
+[0.961s] -- Configuring done
+[0.970s] -- Generating done
+[0.974s] -- Build files have been written to: /home/a/VANGUARD_AlgoExam/build/messages_publisher
+[0.989s] Invoked command in '/home/a/VANGUARD_AlgoExam/build/messages_publisher' returned '0': AMENT_PREFIX_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/a/VANGUARD_AlgoExam/Debug_1/src/messages_publisher -DCMAKE_INSTALL_PREFIX=/home/a/VANGUARD_AlgoExam/install/messages_publisher
+[0.989s] Invoking command in '/home/a/VANGUARD_AlgoExam/build/messages_publisher': AMENT_PREFIX_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/a/VANGUARD_AlgoExam/build/messages_publisher -- -j4 -l4
+[1.058s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher_node.dir/src/publisher_cpp.cpp.o[0m
+[12.183s] [100%] [32m[1mLinking CXX executable publisher_node[0m
+[12.384s] [100%] Built target publisher_node
+[12.396s] Invoked command in '/home/a/VANGUARD_AlgoExam/build/messages_publisher' returned '0': AMENT_PREFIX_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/a/VANGUARD_AlgoExam/build/messages_publisher -- -j4 -l4
+[12.400s] Invoking command in '/home/a/VANGUARD_AlgoExam/build/messages_publisher': AMENT_PREFIX_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/a/VANGUARD_AlgoExam/build/messages_publisher
+[12.408s] -- Install configuration: ""
+[12.409s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/lib/messages_publisher/publisher_node
+[12.411s] -- Set runtime path of "/home/a/VANGUARD_AlgoExam/install/messages_publisher/lib/messages_publisher/publisher_node" to ""
+[12.411s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher//config
+[12.412s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher//config/items.yaml
+[12.412s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/ament_index/resource_index/package_run_dependencies/messages_publisher
+[12.412s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/ament_index/resource_index/parent_prefix_path/messages_publisher
+[12.412s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/environment/ament_prefix_path.sh
+[12.412s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/environment/ament_prefix_path.dsv
+[12.413s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/environment/path.sh
+[12.413s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/environment/path.dsv
+[12.413s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/local_setup.bash
+[12.413s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/local_setup.sh
+[12.413s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/local_setup.zsh
+[12.413s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/local_setup.dsv
+[12.413s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/package.dsv
+[12.414s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/ament_index/resource_index/packages/messages_publisher
+[12.414s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/cmake/messages_publisherConfig.cmake
+[12.414s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/cmake/messages_publisherConfig-version.cmake
+[12.414s] -- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/package.xml
+[12.417s] Invoked command in '/home/a/VANGUARD_AlgoExam/build/messages_publisher' returned '0': AMENT_PREFIX_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/a/VANGUARD_AlgoExam/install/messages_cpp/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/a/VANGUARD_AlgoExam/build/messages_publisher

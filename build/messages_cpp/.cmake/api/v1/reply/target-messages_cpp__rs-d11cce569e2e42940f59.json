@@ -1,0 +1,73 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/a/VANGUARD_AlgoExam/build/messages_cpp/messages_cpp__rs/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 32,
+				"parent" : 0
+			}
+		]
+	},
+	"id" : "messages_cpp__rs::@37766f6b364206cd0018",
+	"name" : "messages_cpp__rs",
+	"paths" : 
+	{
+		"build" : "messages_cpp__rs",
+		"source" : "/home/a/VANGUARD_AlgoExam/build/messages_cpp/messages_cpp__rs"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/a/VANGUARD_AlgoExam/build/messages_cpp/messages_cpp__rs/CMakeFiles/messages_cpp__rs",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/a/VANGUARD_AlgoExam/build/messages_cpp/messages_cpp__rs/CMakeFiles/messages_cpp__rs.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/a/VANGUARD_AlgoExam/build/messages_cpp/rosidl_generator_rs/messages_cpp/rust/src/lib.rs.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

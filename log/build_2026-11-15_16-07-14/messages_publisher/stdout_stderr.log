@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target publisher_node[0m
+[100%] Built target publisher_node
+-- Install configuration: ""
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/lib/messages_publisher/publisher_node
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher//config
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher//config/items.yaml
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/ament_index/resource_index/package_run_dependencies/messages_publisher
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/ament_index/resource_index/parent_prefix_path/messages_publisher
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/environment/ament_prefix_path.sh
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/environment/path.sh
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/environment/path.dsv
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/local_setup.bash
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/local_setup.sh
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/local_setup.zsh
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/local_setup.dsv
+-- Installing: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/package.dsv
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/ament_index/resource_index/packages/messages_publisher
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/cmake/messages_publisherConfig.cmake
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/cmake/messages_publisherConfig-version.cmake
+-- Up-to-date: /home/a/VANGUARD_AlgoExam/install/messages_publisher/share/messages_publisher/package.xml
