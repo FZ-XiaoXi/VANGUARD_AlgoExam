@@ -147,7 +147,8 @@ static bool make_token(const char *e) {
           std::cerr << "数字长度超出限制" << std::endl;
           return false;
         }
-		
+        nr_token = 0;
+        
         /*
          * 根据规则类型填写 tokens 数组，里面是 token 结构体。
          * 空白的类型是 TK_NOTYPE，只移动 position，不增加 nr_token；
@@ -175,7 +176,6 @@ static bool make_token(const char *e) {
         break;
       }
     }
-
     // 所有规则都不匹配，说明输入里出现了不支持的字符。
     if (i == NR_REGEX) {
       std::cerr << "位置 " << position << " 处无法匹配输入：\n" << e << "\n" << std::string(position, ' ') << "^\n";
@@ -187,7 +187,6 @@ static bool make_token(const char *e) {
   }
   return true;
 }
-
 // 提前声明 eval()，因为 expr() 要先调用它，而函数定义在后面。
 std::int32_t eval(int p, int q);
 
@@ -295,7 +294,7 @@ bool check_parentheses(int p, int q){
         return false;
       }
       // 外层括号在 q 之前就闭合，说明后面还有别的内容，不能整体去掉。
-      if (depth == 0 && i < q) {
+      if (depth == 0 && i <= q) {
         return false;
       }
     }
@@ -322,7 +321,7 @@ std::int32_t eval(int p, int q) {
     std::cerr << "表达式错误：表达式为空" << std::endl;
     eval_ok = false;
     return 0;
-  }else if (p == q){    //分支2. 开始位置等于结束位置，说明当前区间只有一个字符，也就是一个 token
+  } else if (p == q){    //分支2. 开始位置等于结束位置，说明当前区间只有一个字符，也就是一个 token
     /*
      * 当前区间只有一个字符，也就是一个 token。
      * 合法表达式拆到最小只能是数字；如果这里出现运算符或括号，
@@ -342,7 +341,7 @@ std::int32_t eval(int p, int q) {
     return out;
   }else if (check_parentheses(p, q) == true){   //分支3. 当前区间被一对完整的括号包住，去掉括号后继续计算里面的内容
     // 例如“(1+2)”只需要计算里面的“1+2”，括号本身不产生数值。
-    return eval(p, q);
+    return eval(p + 1, q - 1);
   }else{    // 普通表达式：在最外层寻找一个运算符，把区间拆成两半。
     int op = 0;
     int op_type = 0;
@@ -357,7 +356,7 @@ std::int32_t eval(int p, int q) {
      * 对于+的不能拿来拆分整个式子。
      *
      * 如果有多个运算符在最外层不被括号包围，如“5+3*2”
-     * 加减优先级低于乘除，所以应该优先选择加减作为当前区间的根运算。
+     * 加减优先级低于乘除，所以应该./build/expression_calculator test优先选择加减作为当前区间的根运算。
      * op_level 数字越小表示优先级越低。
      */
     for (int i = p; i <= q; ++i) {
@@ -404,7 +403,7 @@ std::int32_t eval(int p, int q) {
       eval_ok = false;
       return 0;
     }
-
+    
     /*
      * 例如选中“1+2*3”中的“+”后，递归计算：
      *   val1 = eval(0, 0)   -> 1
@@ -431,7 +430,7 @@ std::int32_t eval(int p, int q) {
       case '-'    : return val1 - val2;
       case '*'    : return val1 * val2;
       case '/':
-        if (val1 == 0) {
+        if (val2 == 0) {
           std::cerr << "表达式错误：除数为零" << std::endl;
           eval_ok = false;
           return 0;
