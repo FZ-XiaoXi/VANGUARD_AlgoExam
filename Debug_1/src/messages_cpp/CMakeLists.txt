@@ -1,3 +1,4 @@
+#include <rclcpp/rclcpp.hpp>
 cmake_minimum_required(VERSION 3.8)
 project(messages_cpp)
 

@@ -1,4 +1,4 @@
-#include <messages_cpp/msg/item_info.hpp>
+#include <messages_cpp/msg/ItemInfo.msg>
 #include <rclcpp/rclcpp.hpp>
 
 class ItemInfoSubscriber : public rclcpp::Node {
@@ -8,7 +8,7 @@ public:
   {
     // 使用 lambda 表达式替代 std::bind，避免函数重载解析问题
     subscription_ = this->create_subscription<messages_cpp::msg::ItemInfo>(
-        "ItemInfo", 10,
+        "item_info", 10,
       [this](const messages_cpp::msg::ItemInfo::SharedPtr msg) {
         this->topic_callback(msg);
         });
@@ -24,7 +24,7 @@ private:
     RCLCPP_INFO(this->get_logger(), "  ID: %d", msg->id);
     RCLCPP_INFO(this->get_logger(), "  Name: %s", msg->name.c_str());
     RCLCPP_INFO(this->get_logger(), "  Info: %s", msg->info.c_str());
-    RCLCPP_INFO(this->get_logger(), "----------------------------------------");
+    RCLCPP_INFO(this->get_logger(), "-----------------------------------");
   }
 
   rclcpp::Subscription<messages_cpp::msg::ItemInfo>::SharedPtr subscription_;
