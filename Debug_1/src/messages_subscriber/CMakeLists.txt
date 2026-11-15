@@ -7,13 +7,15 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(messages_cpp REQUIRED)
 find_package(rclcpp REQUIRED)
+
 
 add_executable(subscriber_node src/subscriber_cpp.cpp)
 ament_target_dependencies(subscriber_node rclcpp messages_cpp)
 install(TARGETS
   subscriber_node
-  DESTINATION bin/${PROJECT_NAME}
+  DESTINATION lib/${PROJECT_NAME}
 )
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
