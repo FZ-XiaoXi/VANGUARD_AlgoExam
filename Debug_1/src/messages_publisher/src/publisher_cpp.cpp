@@ -22,7 +22,7 @@ public:
     }
 
     publisher_ =
-      this->create_publisher<messages_cpp::msg::ItemInfo>("item_info", 10);
+      this->create_publisher<messages_cpp::msg::ItemInfo>("ItemInfo", 10);
     timer_ = this->create_wall_timer(
         1000ms, std::bind(&ItemInfoPublisher::timer_callback, this));
 
