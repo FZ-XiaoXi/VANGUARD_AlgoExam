@@ -1,5 +1,5 @@
 # VANGUARD 算法组代码调试考核
-
+nihaonihao
 ## 考核说明
 
 代码调试考核目录下有 `Debug_1` 与 `Debug_2` 两个项目。考查代码 Debug 能力的同时，将考查 git 与 github 的使用。
